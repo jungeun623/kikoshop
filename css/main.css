@@ -4,13 +4,22 @@
 @import url("header.css");
 @import url("brand-banner.css");
 @import url("product.css");
-@import url("brand.css");
 @import url("membership.css");
 @import url("footer.css");
 @import url("responsive.css");
+html{
+  font-size: 10px;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+}
+.wrap {
+  width: 100%;
+  max-width: 1280px;
+  
+  display: block;
+  margin: 0 auto;
 }
