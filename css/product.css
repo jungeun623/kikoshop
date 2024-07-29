@@ -1,15 +1,18 @@
 @charset "utf-8";
-.product p {
+.product span {
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
 }
 .product{
     width: 100%;
+    height: 700px;
     margin: 0 auto;
 }
-.product ul{
-    display: flex;
+.product img{
+    width: 400px;
+    height: 400px;
 }
-.productlist li {
-    display: flex;
+.container{
+    width: 100%;
+    height: 100%;
 }
