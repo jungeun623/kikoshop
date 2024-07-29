@@ -55,3 +55,10 @@
   width: 50%;
   /* height: 50%; */
 }
+
+/* 반응형 */
+@media screen and (max-width: 680px) {
+  {
+      max-width: 768px;
+  }
+}
