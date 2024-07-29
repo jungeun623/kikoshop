@@ -3,16 +3,15 @@
     text-align: center;
     font-size: 70px;
 }
-.product{
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
-}
-.product img{
-    width: 400px;
-    height: 400px;
-}
-.container{
+.product ul {
     width: 100%;
     height: 100%;
+    display: flex;
+}
+.product li{
+    margin: 10px 10px;
+}
+.product li img{
+    width: 400px;
+    height: 400px;
 }
