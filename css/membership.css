@@ -66,3 +66,91 @@
     line-height: 40px;
     font-weight: 700;
 }
+/* 반응형 */
+@media screen and (max-width:768px) {
+  .membership-left button{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:635px) {
+  .membership-left button{
+    font-size: 20px;
+    height: 60px;
+  }
+  .membership-right .truck h3{
+    font-size: 25px;
+  }
+  .membership-right .coupon h3{
+    font-size: 25px;
+  }
+  .membership-left h3{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:535px) {
+  .membership-left button{
+    font-size: 20px;
+    height: 50px;
+  }
+  .membership-right .truck h3{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .membership-right .coupon h3{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .membership-left h3{
+    font-size: 22px;
+  }
+}
+@media screen and (max-width:450px) {
+  .membership-inner{
+    height: 500px;
+  }
+  .membership-left button{
+    font-size: 17px;
+    height: 50px;
+  }
+  .membership-right .truck h3{
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .membership-right .coupon h3{
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .membership-left h3{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:320px) {
+  .membership-inner{
+    height: 400px;
+  }
+  .membership-right .truck{
+    width: 50%;
+    float: none;
+    margin: 0 auto
+  }
+  .membership-right .coupon{
+    width: 50%;
+    float: none;
+    margin: 0 auto
+  }
+  .membership-left button{
+    font-size: 15px;
+    height: 50px;
+  }
+  .membership-right .truck h3{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .membership-right .coupon h3{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .membership-left h3{
+    font-size: 18px;
+  }
+}
