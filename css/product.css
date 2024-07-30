@@ -1,8 +1,7 @@
 @charset "utf-8";
 .product {
-  width: 100%;
-  /* max-width: 1280px; */
-  /* position: relative; */
+  width: 80%;
+  margin: auto;
 }
 .product h3 {
   padding: 30px;
@@ -18,53 +17,48 @@
   height: 100%;
 }
 .product ul li {
-  width: 50%;
+  width: calc(100% / 2);
   padding: 20px;
+  height: 500px;
+}
+.product ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 .product a img {
   width: 100%;
   height: 100%;
-  padding: 20px;
 }
 /* 상품설명 */
 .product p {
   color: #fff;
   padding: 5px;
+  font-size: 20px;
 }
 .product .info {
-  /* transform: translate(20px, -324px); */
-  position: relative;
-  width: 50%;
-  height: 50%;
-  /* padding-top: 20px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  /* opacity: 0; */
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   z-index: 10;
+  opacity: 0;
 }
 .product li:hover .info {
   opacity: 1;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transform: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transform: all 0.2s ease-in-out;
 }
 
 /* 반응형 */
 @media screen and (max-width: 1280px) {
-  .product {
-    max-width: 1024px;
+  .product ul li {
+    height: 39vw;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .product img {
-    width: 70%;
-  }
 }
 @media screen and (max-width: 450px) {
 }
