@@ -17,7 +17,7 @@ html{
 /* 헤더 */
 .header {
   width: 100%;
-  height: 100px;
+  height: 120px;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -27,49 +27,35 @@ html{
   height: 100%;
 }
 /* 상단위 왼쪽 메뉴바 */
-.header-inner .header-menu {
-  width: 25%;
-  height: 100%;
-  padding: 20px 20px;
+.header .header-inner .header-menu {
+  width: 20%;
   float: left;
 }
-.header-menu a {
-  width: 70%;
-  height: 100%;
-}
-.header-menu a img {
+.header-menu img {
   width: 30%;
-  /* height: 100%; */
+  margin: 20px;
+ 
 }
+
 /* 로고 */
-.header-inner .logo {
+.header .header-inner .logo {
   width: 60%;
-  height: 100%;
   float: left;
-  padding: 10px 10px;
-  margin-top: 10px;
-  display: flex;
 }
-.logo a {
-  width: 70%;
-  height: 50%;
-}
-.logo a img {
+.header .header-inner .logo img {
   width: 100%;
+  height: 100%;
+  margin: 20px;
 }
 /* 상단위 오른쪽 장바구니 */
 .header-inner .cart {
-  width: 15%;
+  width: 20%;
   float: left;
-  padding-top: 10px;
 }
-.cart a {
+.cart img {
   width: 100%;
   height: 100%;
-}
-.cart a img {
-  width: 50%;
-  /* height: 50%; */
+  margin: 20px;
 }
 /* 설명글 */
 .main{
