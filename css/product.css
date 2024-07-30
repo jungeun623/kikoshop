@@ -34,8 +34,10 @@
 /* 상품설명 */
 .product p {
   color: #fff;
-  padding: 5px;
   font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding-top: 20px;
 }
 .product .info {
   position: absolute;
@@ -43,7 +45,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 10;
   opacity: 0;
 }
@@ -57,10 +59,54 @@
     height: 39vw;
   }
 }
-
 @media screen and (max-width: 550px) {
+  .product ul li {
+    width: 100%;
+    height: 100%;
+  }
+  .product h3 {
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .product p {
+    font-size: 15px;
+    padding: 15px;
+  }
 }
 @media screen and (max-width: 450px) {
+  .product ul li {
+    width: 100%;
+    height: 100%;
+  }
+  .product h3 {
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .product p {
+    font-size: 10px;
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 320px) {
+  .product ul li {
+    width: 100%;
+    height: 100%;
+  }
+  .product h3 {
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .product p {
+    font-size: 10px;
+    padding: 10px;
+  }
 }
