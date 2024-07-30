@@ -1,29 +1,29 @@
+window.addEventListener("load",function(){
 // 상단의 마이페이지 리스트 기능
 
 // 로고
 
 // swiper 배너================
-// 프로모션 스와이퍼 기능
-var swiper = new Swiper(".mySwiper", {
+// 배너 스와이퍼 기능
+const swBanner = new Swiper(".sw-banner", {
   slidesPerView: 1,
   spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+    },
+    760: {
+      slidesPerView: 1,
+    },
+  },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".sw-banner-pg ",
     clickable: true,
   },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 50,
-    },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
   },
 });
 
@@ -34,3 +34,5 @@ var swiper = new Swiper(".mySwiper", {
 //멤버십
 
 // 하단
+
+})

@@ -7,6 +7,7 @@
 @import url("membership.css");
 @import url("footer.css");
 @import url("responsive.css");
+@import url("baner.css");
 html{
   font-size: 10px;
 }
