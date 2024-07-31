@@ -1,0 +1,218 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.wrap {
+    width: 100%;
+    max-width: 1280px;
+    display: block;
+    margin: 0 auto;
+  }
+  /* 헤더 */
+  .header {
+    position: relative;
+    width: 100%;
+    /* height: 120px; */
+    background-color: black;
+    z-index: 99999;
+    padding:0 20px;
+  }
+  .header .header-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* 상단위 왼쪽 메뉴바 */
+  .header-inner .bar {
+    width: 10%;
+  }
+  .header-inner .bar img {
+    width: 95%;
+    float: left;
+  }
+  
+  /* 모바일 메뉴 (메뉴바 탭 하면 나오는 창) */
+  .nav-mb {
+    /* display: none; */
+    position: absolute;
+    /* 모바일일때 header의 높이 */
+    top: 100%;
+    left: 0;
+    width: 100%;
+    /* 브라우저 전체높이 = 100vh   */
+    /* height: calc(100vh - 500px); */
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    /* z-index: 99999; */
+  }
+  .nav-mb.active{
+    top: 100%;
+    left: 0;
+    opacity: 1;
+  }
+  .nav-mb-gnb li {
+    line-height: 55px;
+  }
+  .nav-mb-gnb li a {
+    display: block;
+    padding: 0 20px;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #4b4b4b8e;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  /* 로고 */
+  .header-inner .logo {
+    width: 100%;
+    /* height: 80%; */
+    display: flex;
+    justify-content: center;
+  }
+  .header-inner .logo img {
+    width: 80%;
+    float: left;
+    margin: 20px;
+  }
+  /* 상단위 오른쪽 장바구니 */
+  .header-inner .cart {
+    width: 10%;
+  }
+  .header-inner .cart img {
+    width: 100%;
+  }
+  
+  /* 반응형 */
+  
+  @media screen and (max-width: 320px) {
+   
+   
+    .header {
+      height: 65px;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+   
+   
+  }
+  /* @media screen and (max-width: 680px) {
+    {
+        max-width: 768px;
+    }
+  } */
+  @media screen and (max-width: 800px) {
+    .main-letter button {
+      font-size: 30px;
+    }
+    .header-inner .bar img {
+   
+  }
+}
+  
+/* 로그인 창 */
+.login-wrapper {
+  width: 70%;
+  height: 610px;
+  padding: 50px;
+  /* border: 1px solid rgba(0,0,0,0.3); */
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: white;
+}
+
+.login-wrapper > h2 {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  margin: 10px 0px 60px 0;
+}
+#login-form > input {
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  background-color: #cfcfcf;
+  font-size: 25px;
+}
+#login-form > input::placeholder {
+  color: #ffffff;
+}
+#login-form > input[type="button"] {
+  color: #fff;
+  font-size: 30px;
+  background-color: black;
+  margin-top: 20px;
+}
+.remember-check a {
+  text-decoration: none;
+  color: red;
+  font-size: 15px;
+}
+/* 반응형 */
+  @media screen and (max-width: 768px){
+    .login-wrapper{
+        width: 80%;
+    }
+    .login-wrapper > h2{
+        font-size: 45px;
+    }
+  }
+  @media screen and (max-width: 650px){
+    .login-wrapper{
+        width: 90%;
+    }
+    .login-wrapper > h2{
+        font-size: 45px;
+    }
+    #login-form > input{
+        font-size: 20px;
+        height: 70px;
+    }
+  }
+  @media screen and (max-width: 490px){
+    .login-wrapper{
+        width: 100%;
+    }
+    .login-wrapper > h2{
+        font-size: 40px;
+    }
+    #login-form > input{
+        font-size: 20px;
+        height: 70px;
+    }
+  }
+  @media screen and (max-width: 320px){
+    .login-wrapper{
+        width: 100%;
+        padding: 30px;
+    }
+    .login-wrapper > h2{
+        font-size: 20px;
+    }
+    #login-form > input{
+        font-size: 15px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    .remember-check a {
+        font-size: 12px;
+    }
+    #login-form > input[type="button"]{
+        font-size: 20px;
+    }
+    .login-wrapper > h2 {
+        margin: 10px 0px 30px 0;
+    }
+  }
