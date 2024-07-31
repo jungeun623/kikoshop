@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="wrap">
+         <!-- 상단 -->
+      <div class="header">
+        <div class="header-inner">
+          <!-- 상단위 왼쪽 메뉴바 -->
+          <a href="#"  class="bar">
+            <img src="images/menubar.png" alt="메뉴" />
+          </a>
+
+          
+          <!-- 로고 -->
+          <a href="#" class="logo">
+            <img src="images/header logo.png" alt="로고"  />
+          </a>
+
+          <!-- 상단위 오른쪽 장바구니 -->
+          <a href="#" class="cart">
+            <img src="images/cart.png" alt="카트"  />
+          </a>
+        </div>
+      </div>
+      <!-- 로그인 창 -->
+      <div class="login-wrapper">
+        <h2>KIKO SHOP LOGIN</h2>
+        <form method="post" id="login-form">
+          <input type="text" name="userName" placeholder="Email" />
+          <input type="password" name="userPassword" placeholder="Password" />
+          <label class="remember-check">
+            <a href="#">회원가입 페이지로 넘어가기</a>
+          </label>
+          <input type="button" value="Login" onclick="alert(`로그인이 완료되었습니다.`)">
+        </form>
+      </div>
+    </div>
+</body>
+</html>
