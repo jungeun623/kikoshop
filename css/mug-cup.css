@@ -13,14 +13,18 @@
 }
 /* 헤더 */
 .header {
+  position: relative;
   width: 100%;
   /* height: 120px; */
   background-color: black;
+  z-index: 99999;
+  padding: 0 20px;
 }
 .header .header-inner {
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -31,10 +35,39 @@
 .header-inner .bar img {
   width: 95%;
   float: left;
-  margin: 20px;
 }
 
-/* 왼쪽 상세 메뉴바 */
+/* 모바일 메뉴 (메뉴바 탭 하면 나오는 창) */
+.nav-mb {
+  /* display: none; */
+  position: absolute;
+  /* 모바일일때 header의 높이 */
+  top: 100%;
+  left: 0;
+  width: 100%;
+  /* 브라우저 전체높이 = 100vh   */
+  /* height: calc(100vh - 500px); */
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  /* z-index: 99999; */
+}
+.nav-mb.active {
+  top: 100%;
+  left: 0;
+  opacity: 1;
+}
+.nav-mb-gnb li {
+  line-height: 55px;
+}
+.nav-mb-gnb li a {
+  display: block;
+  padding: 0 20px;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #4b4b4b8e;
+  border-bottom: 1px solid #e5e5e5;
+}
 
 /* 로고 */
 .header-inner .logo {
@@ -54,42 +87,29 @@
 }
 .header-inner .cart img {
   width: 100%;
-  margin-top: 20px;
 }
 
 /* 반응형 */
 
 @media screen and (max-width: 320px) {
-  .header-inner .bar img {
-    margin: 20px 0 20px 10px;
-  }
-  .header-inner .cart img {
-    margin-top: 20px;
-  }
   .header {
     height: 65px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .header-inner .bar img {
-    margin: 25px 0 25px 15px;
-  }
-  .header-inner .cart img {
-    margin-top: 25px;
-  }
 }
-@media screen and (max-width: 680px) {
-   {
-    max-width: 768px;
+/* @media screen and (max-width: 680px) {
+  {
+      max-width: 768px;
   }
-}
+} */
 @media screen and (max-width: 800px) {
   .main-letter button {
     font-size: 30px;
   }
+
   .header-inner .bar img {
-    margin: 20px 0 20px 15px;
   }
 }
 
@@ -393,8 +413,8 @@
   .button button {
     font-size: 50px;
   }
-  .detailCut h2{
-font-size: 80px;
+  .detailCut h2 {
+    font-size: 80px;
   }
   .size h2 {
     font-size: 75px;
@@ -413,7 +433,8 @@ font-size: 80px;
   .count-wrap p {
     font-size: 50px;
   }
-  .count-wrap .minus , .count-wrap .plus {
+  .count-wrap .minus,
+  .count-wrap .plus {
     font-size: 70px;
     width: 90px;
   }
@@ -423,8 +444,8 @@ font-size: 80px;
   .button button {
     font-size: 45px;
   }
-  .detailCut h2{
-font-size: 70px;
+  .detailCut h2 {
+    font-size: 70px;
   }
   .size h2 {
     font-size: 65px;
@@ -443,7 +464,8 @@ font-size: 70px;
   .count-wrap p {
     font-size: 45px;
   }
-  .count-wrap .minus , .count-wrap .plus {
+  .count-wrap .minus,
+  .count-wrap .plus {
     font-size: 60px;
     width: 80px;
   }
@@ -453,8 +475,8 @@ font-size: 70px;
   .button button {
     font-size: 40px;
   }
-  .detailCut h2{
-font-size: 65px;
+  .detailCut h2 {
+    font-size: 65px;
   }
   .size h2 {
     font-size: 55px;
@@ -473,7 +495,8 @@ font-size: 65px;
   .count-wrap p {
     font-size: 38px;
   }
-  .count-wrap .minus , .count-wrap .plus {
+  .count-wrap .minus,
+  .count-wrap .plus {
     font-size: 50px;
     width: 70px;
   }
@@ -483,8 +506,8 @@ font-size: 65px;
   .button button {
     font-size: 32px;
   }
-  .detailCut h2{
-font-size: 55px;
+  .detailCut h2 {
+    font-size: 55px;
   }
   .size h2 {
     font-size: 48px;
@@ -494,9 +517,9 @@ font-size: 55px;
   }
 }
 @media screen and (max-width: 320px) {
-    .main-letter{
-        margin-top: 10px;
-    }
+  .main-letter {
+    margin-top: 10px;
+  }
   .main-letter h2 {
     font-size: 35px;
   }
@@ -504,13 +527,14 @@ font-size: 55px;
     font-size: 32px;
     padding-bottom: 20px;
   }
-  .count-wrap{
+  .count-wrap {
     margin: 18px;
   }
   .count-wrap p {
     font-size: 25px;
   }
-  .count-wrap .minus , .count-wrap .plus {
+  .count-wrap .minus,
+  .count-wrap .plus {
     font-size: 30px;
     width: 40px;
   }
@@ -520,13 +544,13 @@ font-size: 55px;
   .button button {
     font-size: 20px;
   }
-  .detailCut{
+  .detailCut {
     margin-top: 100px;
   }
-  .detailCut h2{
-font-size: 45px;
+  .detailCut h2 {
+    font-size: 45px;
   }
-  .detailCut img{
+  .detailCut img {
     margin-top: 80px;
   }
   .size h2 {
