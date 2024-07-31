@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MUG-CUP</title>
     <link rel="stylesheet" href="css/mug-cup.css" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
   </head>
   <body>
     <div class="wrap">
@@ -34,12 +36,61 @@
       <!-- 상품 이름, 가격 -->
       <div class="main-letter">
         <h2>KIKO MUG CUP</h2>
+        <p>KRW 32,000 </p>
       </div>
       <!-- 수량 -->
-        <div class="count">
-           
+      <div class="count-wrap _count">
+        <button type="button" class="minus">-</button>
+        <input type="text" class="inp" value="1" />
+        <button type="button" class="plus">+</button>
+      </div>
+      <!-- 버튼 -->
+       <div class="button">
+        <button>ADD TO CART</button>
+        <button>BUY IT NOW</button>
+       </div>
+       <!-- 디테일 컷 -->
+        <div class="detailCut">
+            <h2>Detail Cut</h2>
+            <img src="images/goods(mug-cup).png" alt="머그컵">
+            <img src="images/goods(mug-cup).png" alt="머그컵">
         </div>
-        
+        <!-- 사이즈 -->
+         <div class="size">
+            <h2>Size</h2>
+         </div>
     </div>
+
+    <script>
+      $(document).ready(function () {
+        $("._count :button").on({
+          click: function (e) {
+            e.preventDefault();
+            var $count = $(this).parent("._count").find(".inp");
+            var now = parseInt($count.val());
+            var min = 1;
+            var max = 999;
+            var num = now;
+            if ($(this).hasClass("minus")) {
+              var type = "m";
+            } else {
+              var type = "p";
+            }
+            if (type == "m") {
+              if (now > min) {
+                num = now - 1;
+              }
+            } else {
+              if (now < max) {
+                num = now + 1;
+              }
+            }
+            if (num != now) {
+              $count.val(num);
+            }
+          },
+        });
+      });
+    </script>
   </body>
 </html>
