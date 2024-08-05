@@ -130,12 +130,14 @@
 }
 .main-letter h2 {
   font-size: 100px;
+ 
 }
 .main-letter p {
   padding-bottom: 50px;
   font-size: 90px;
   font-weight: 400;
   border-bottom: 2px solid #333;
+  
 }
 /* 수량버튼 */
 .count-wrap {
