@@ -2,6 +2,7 @@
 .product {
   width: 80%;
   margin: auto;
+  margin-bottom: 50px;
 }
 .product h3 {
   padding: 30px;
@@ -49,6 +50,7 @@
   z-index: 10;
   opacity: 0;
 }
+
 .product li:hover .info {
   opacity: 1;
 }
@@ -58,13 +60,13 @@
   .product ul li {
     height: 39vw;
   }
-  .product p{
+  .product p {
     font-size: 20px;
     padding: 10px 0;
   }
 }
-@media screen and (max-width: 768px){
-  .product p{
+@media screen and (max-width: 768px) {
+  .product p {
     font-size: 15px;
   }
 }
