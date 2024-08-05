@@ -24,3 +24,17 @@ html {
   display: block;
   margin: 0 auto;
 }
+/* gotop */
+.gotop img {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+}
+.gotop.active-footer {
+  bottom: 320px;
+}
