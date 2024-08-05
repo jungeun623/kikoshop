@@ -25,9 +25,24 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
-
+    <!-- waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- AOS 적용 css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS 적용 js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- xeicon -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
   </head>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Swiper JS -->
+  <script src="js/gotop.js"></script>
   <body>
+    <!--gotop  -->
+    <button class="gotop">
+      <img src="images/gotop.png" alt="클릭" />
+    </button>
     <div class="wrap">
       <!-- 상단 -->
       <div class="header">
@@ -56,7 +71,11 @@
             <li><a href="#">Brand</a></li>
             <li><a href="#">Community</a></li>
             <li><a href="#">Cart</a></li>
-            <li><a href="#">검색어를 입력하세요<hr></li>
+            <li>
+              <a href="#">검색어를 입력하세요
+                <hr
+              /></a>
+            </li>
             <li><a href="#">KR / EN</a></li>
           </ul>
         </div>
@@ -68,7 +87,6 @@
       <!-- 상품 이름, 가격 -->
       <div class="main-letter">
         <h2>KIKO MUG CUP</h2>
-        <p>KRW 34,000 </p>
       </div>
       <!-- 수량 -->
       <div class="count-wrap _count">
@@ -78,22 +96,22 @@
         <button type="button" class="plus">+</button>
       </div>
       <!-- 버튼 -->
-       <div class="button">
+      <div class="button">
         <button class="cartBt">ADD TO CART</button>
         <button class="buyBt">BUY IT NOW</button>
-       </div>
-       <!-- 디테일 컷 -->
-        <div class="detailCut">
-            <h2>Detail Cut</h2>
-            <img src="images/goods(mug-cup).png" alt="머그컵">
-            <img src="images/goods(mug-cup).png" alt="머그컵">
-        </div>
-        <!-- 사이즈 -->
-         <div class="size">
-            <h2>Size</h2>
-            <p>height : 14cm , width : 6cm</p>
-         </div>
-          <!-- 하단 -->
+      </div>
+      <!-- 디테일 컷 -->
+      <div class="detailCut">
+        <h2>Detail Cut</h2>
+        <img src="images/goods(mug-cup).png" alt="머그컵" />
+        <img src="images/goods(mug-cup).png" alt="머그컵" />
+      </div>
+      <!-- 사이즈 -->
+      <div class="size">
+        <h2>Size</h2>
+        <p>height : 14cm , width : 6cm</p>
+      </div>
+      <!-- 하단 -->
       <div class="footer">
         <div class="footer-inner">
           <!-- 하단 왼쪽(로고) 영역-->
@@ -128,7 +146,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <script>
