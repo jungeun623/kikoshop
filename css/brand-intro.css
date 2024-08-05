@@ -15,7 +15,6 @@ html{
     margin: 0 auto;
   }
 /* 헤더 */
-/* 헤더 */
 .header {
   position: relative;
   width: 100%;
@@ -43,20 +42,16 @@ html{
 
 /* 모바일 메뉴 (메뉴바 탭 하면 나오는 창) */
 .nav-mb {
-  /* display: none; */
   position: absolute;
-  /* 모바일일때 header의 높이 */
   top: 100%;
   left: 0;
   width: 100%;
-  /* 브라우저 전체높이 = 100vh   */
-  /* height: calc(100vh - 500px); */
   background-color: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
   opacity: 0;
   /* z-index: 99999; */
 }
-.nav-mb.active{
+.nav-mb.active {
   top: 100%;
   left: 0;
   opacity: 1;
@@ -68,9 +63,14 @@ html{
   display: block;
   padding: 0 20px;
   font-size: 2rem;
-  color: #fff;
-  background-color: #4b4b4b8e;
-  border-bottom: 1px solid #e5e5e5;
+  color: #000000;
+  background-color: #adadad91;
+  /* border-bottom: 2px solid #e5e5e5; */
+  text-decoration-line: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* 로고 */
