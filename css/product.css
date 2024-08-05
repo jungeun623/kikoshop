@@ -35,10 +35,11 @@
 /* 상품설명 */
 .product p {
   color: #fff;
-  font-size: 20px;
+  font-size: 3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   padding-top: 10px;
+  margin-top: 20px;
 }
 .product .info {
   position: absolute;
