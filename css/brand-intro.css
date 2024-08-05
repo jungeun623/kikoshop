@@ -314,6 +314,9 @@ text-align: center;
   }
   }
   @media screen and (max-width: 450px) {
+    .main-img img{
+      margin: 5px;
+    }
     .footer-left img {
       width: 70%;
       margin-top: 120px;
@@ -350,7 +353,9 @@ text-align: center;
   }
   }
   @media screen and (max-width: 320px) {
-     
+      .main-img img{
+        margin: 5px;
+      }
       .footer-inner {
          
           display: block;
