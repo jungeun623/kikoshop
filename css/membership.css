@@ -125,16 +125,25 @@
   }
 }
 @media screen and (max-width:320px) {
+  .membership{
+    padding-top: 30px;
+  }
+  .membership-left{
+    width: 55%;
+  }
+  .membership-right{
+    width: 45%;
+  }
   .membership-inner{
     height: 400px;
   }
   .membership-right .truck{
-    width: 50%;
+    width: 60%;
     float: none;
     margin: 0 auto
   }
   .membership-right .coupon{
-    width: 50%;
+    width: 60%;
     float: none;
     margin: 0 auto
   }
@@ -143,11 +152,11 @@
     height: 50px;
   }
   .membership-right .truck h3{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
   }
   .membership-right .coupon h3{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
   }
   .membership-left h3{
