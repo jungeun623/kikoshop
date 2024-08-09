@@ -9,6 +9,7 @@
 @import url("responsive.css");
 @import url("baner.css");
 @import url("brand-intro.css");
+@import url("loginPage.css");
 html {
   font-size: 10px;
 }
