@@ -124,9 +124,50 @@
     font-size: 20px;
   }
 }
+@media screen and (max-width:375px) {
+  .membership{
+    height: 450px;
+    padding-top: 30px;
+  }
+  .membership-left{
+    width: 55%;
+  }
+  .membership-right{
+    width: 45%;
+  }
+  .membership-inner{
+    height: 400px;
+  }
+  .membership-right .truck{
+    width: 60%;
+    float: none;
+    margin: 0 auto
+  }
+  .membership-right .coupon{
+    width: 60%;
+    float: none;
+    margin: 0 auto
+  }
+  .membership-left button{
+    font-size: 15px;
+    height: 50px;
+  }
+  .membership-right .truck h3{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .membership-right .coupon h3{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .membership-left h3{
+    font-size: 18px;
+  }
+}
 @media screen and (max-width:320px) {
   .membership{
     padding-top: 30px;
+    height: 450px;
   }
   .membership-left{
     width: 55%;

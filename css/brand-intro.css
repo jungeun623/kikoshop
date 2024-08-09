@@ -353,6 +353,74 @@ html {
     font-size: 25px;
   }
 }
+@media screen and (max-width: 375px) {
+  .main-img img {
+    margin: 5px;
+  }
+  .footer-inner {
+    display: block;
+  }
+  .footer-left {
+    margin: 0 auto;
+    display: block;
+  }
+  .footer-left img {
+    margin: 0px auto;
+    display: block;
+    padding-top: 10px;
+  }
+  .footer-left p {
+    font-size: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+  .footer-right {
+    width: 100%;
+
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer-right .center {
+    width: calc(100% / 2);
+    margin: 0 auto;
+  }
+  .footer-right .center p {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+  }
+  .footer-right .right {
+    width: calc(100% / 2);
+    margin: 0 auto;
+  }
+  .footer-right .right p {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 15px;
+  }
+  .footer-right .right img {
+    margin-top: 20px;
+  }
+  .title h2 {
+    font-size: 28px;
+    padding-top: 50px;
+  }
+  .title p {
+    font-size: 18px;
+  }
+  .main-letter p {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .main-letter button {
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: red;
+    margin-bottom: 80px;
+  }
+}
 @media screen and (max-width: 320px) {
   .main-img img {
     margin: 5px;
