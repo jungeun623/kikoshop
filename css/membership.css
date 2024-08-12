@@ -126,7 +126,7 @@
 }
 @media screen and (max-width:375px) {
   .membership{
-    height: 450px;
+    height: 410px;
     padding-top: 30px;
   }
   .membership-left{
@@ -136,7 +136,7 @@
     width: 45%;
   }
   .membership-inner{
-    height: 400px;
+    height: 350px;
   }
   .membership-right .truck{
     width: 60%;
@@ -167,7 +167,7 @@
 @media screen and (max-width:320px) {
   .membership{
     padding-top: 30px;
-    height: 450px;
+    height: 370px;
   }
   .membership-left{
     width: 55%;
@@ -176,7 +176,7 @@
     width: 45%;
   }
   .membership-inner{
-    height: 400px;
+    height: 300px;
   }
   .membership-right .truck{
     width: 60%;

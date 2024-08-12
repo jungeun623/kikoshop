@@ -153,7 +153,7 @@ html {
 /* footer */
 .footer {
   width: 100%;
-  height: 300px;
+  height: 100;
   background-color: black;
 }
 .footer-inner {
@@ -354,9 +354,6 @@ html {
   }
 }
 @media screen and (max-width: 375px) {
-  .main-img img {
-    margin: 5px;
-  }
   .footer-inner {
     display: block;
   }
@@ -367,13 +364,15 @@ html {
   .footer-left img {
     margin: 0px auto;
     display: block;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   .footer-left p {
+    text-align: center;
     font-size: 8px;
     display: block;
     margin: 0 auto;
   }
+
   .footer-right {
     width: 100%;
 
@@ -388,7 +387,7 @@ html {
   .footer-right .center p {
     font-size: 12px;
     line-height: 12px;
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .footer-right .right {
     width: calc(100% / 2);
@@ -397,12 +396,16 @@ html {
   .footer-right .right p {
     font-size: 12px;
     line-height: 12px;
-    margin-top: 15px;
+    margin-top: 30px;
   }
   .footer-right .right img {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
-  .title h2 {
+  .main-img img {
+    margin: 5px;
+  }
+.title h2 {
     font-size: 28px;
     padding-top: 50px;
   }
@@ -422,9 +425,6 @@ html {
   }
 }
 @media screen and (max-width: 320px) {
-  .main-img img {
-    margin: 5px;
-  }
   .footer-inner {
     display: block;
   }
@@ -435,13 +435,15 @@ html {
   .footer-left img {
     margin: 0px auto;
     display: block;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   .footer-left p {
+    text-align: center;
     font-size: 8px;
     display: block;
     margin: 0 auto;
   }
+
   .footer-right {
     width: 100%;
 
@@ -456,7 +458,7 @@ html {
   .footer-right .center p {
     font-size: 12px;
     line-height: 12px;
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .footer-right .right {
     width: calc(100% / 2);
@@ -465,12 +467,16 @@ html {
   .footer-right .right p {
     font-size: 12px;
     line-height: 12px;
-    margin-top: 15px;
+    margin-top: 30px;
   }
   .footer-right .right img {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
-  .title h2 {
+  .main-img img {
+    margin: 5px;
+  }
+.title h2 {
     font-size: 28px;
     padding-top: 50px;
   }

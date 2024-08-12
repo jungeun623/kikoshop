@@ -11,14 +11,19 @@
   width: 100%;
 }
 .brand-banner-inner a {
+  padding: 15px;
   font-size: 3rem;
   font-weight: 900;
   text-decoration: none;
   color: rgb(255, 57, 57);
 
   position: absolute;
-  top: 28%;
-  left: 6%;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 2px solid red;
+  background-color: white;
 }
 /* 반응형 */
 @media screen and (max-width: 930px) {
@@ -33,6 +38,18 @@
 }
 @media screen and (max-width: 440px) {
   .brand-banner-inner a {
-    font-size: 10px;
+    font-size: 13px;
+    padding: 12px;
+  }
+}
+@media screen and (max-width: 375px){
+  .brand-banner-inner a{
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 320px){
+  .brand-banner-inner a{
+    padding: 6px;
   }
 }
