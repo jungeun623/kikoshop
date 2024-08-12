@@ -25,7 +25,12 @@ html {
   display: block;
   margin: 0 auto;
 }
+
 /* gotop */
+.gotop {
+  position: relative;
+  display: contents;
+}
 .gotop img {
   position: fixed;
   right: 20px;
@@ -38,7 +43,4 @@ html {
 }
 .gotop.active-footer {
   bottom: 320px;
-}
-.gotop{
-  
 }
