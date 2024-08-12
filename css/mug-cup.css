@@ -215,7 +215,7 @@
 /* 푸터 */
 .footer {
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-color: black;
 }
 .footer-inner {
@@ -355,13 +355,15 @@
   .footer-left img {
     margin: 0px auto;
     display: block;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   .footer-left p {
+    text-align: center;
     font-size: 8px;
     display: block;
     margin: 0 auto;
   }
+
   .footer-right {
     width: 100%;
 
@@ -376,7 +378,7 @@
   .footer-right .center p {
     font-size: 12px;
     line-height: 12px;
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .footer-right .right {
     width: calc(100% / 2);
@@ -385,10 +387,11 @@
   .footer-right .right p {
     font-size: 12px;
     line-height: 12px;
-    margin-top: 15px;
+    margin-top: 30px;
   }
   .footer-right .right img {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -402,13 +405,15 @@
   .footer-left img {
     margin: 0px auto;
     display: block;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   .footer-left p {
+    text-align: center;
     font-size: 8px;
     display: block;
     margin: 0 auto;
   }
+
   .footer-right {
     width: 100%;
 
@@ -423,7 +428,7 @@
   .footer-right .center p {
     font-size: 12px;
     line-height: 12px;
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .footer-right .right {
     width: calc(100% / 2);
@@ -432,10 +437,11 @@
   .footer-right .right p {
     font-size: 12px;
     line-height: 12px;
-    margin-top: 15px;
+    margin-top: 30px;
   }
   .footer-right .right img {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -580,10 +586,11 @@
   }
   .main-letter h2 {
     font-size: 35px;
+    padding: 0 0 0 15px;
   }
   .main-letter p {
     font-size: 32px;
-    padding-bottom: 20px;
+    padding: 0 0 20px 15px;
   }
   .count-wrap {
     margin: 18px;
@@ -612,11 +619,15 @@
   .detailCut img {
     margin-top: 80px;
   }
+  .size{
+    margin-top: 90px;
+    margin-bottom: 100px
+  }
   .size h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .size p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -625,11 +636,12 @@
     margin-bottom: 30px;
   }
   .main-letter h2 {
-    font-size: 35px;
+    font-size: 32px;
+    padding: 0 0 0 10px;
   }
   .main-letter p {
-    font-size: 32px;
-    padding-bottom: 20px;
+    font-size: 28px;
+    padding: 0 0 20px 10px;
   }
   .count-wrap {
     margin: 18px;
@@ -658,10 +670,14 @@
   .detailCut img {
     margin-top: 80px;
   }
+  .size{
+    margin-top: 90px;
+    margin-bottom: 100px
+  }
   .size h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .size p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
